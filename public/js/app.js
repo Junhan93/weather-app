@@ -1,5 +1,3 @@
-console.log('Client side javascript file');
-
 // fetch random words
 // let url = 'http://puzzle.mead.io/puzzle';
 let url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/Boston.json?access_token=pk.eyJ1IjoianVuaGFuOTMiLCJhIjoiY2t6cWgybWR0MDc4cTJvcWt4eHN2Ym5iNyJ9.9btGxLOws931l84IQ4J0PA';
