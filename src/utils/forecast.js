@@ -11,8 +11,9 @@ const forecast = (longitude, latitude, callback) => {
         } else if (body.error) {
             callback('Unable to find location', undefined);
         } else {
-            const { weather_descriptions, feelslike } = body.current;
-            callback(undefined, weather_descriptions[0] + ' weather that feels like ' + feelslike + " degree celcius.");
+            const { weather_descriptions, temperature, feelslike } = body.current;
+            const forecastMsg = weather_descriptions[0] + ' with a temperature of ' + temperature + '°C that feels like ' + feelslike + '°C.';
+            callback(undefined, forecastMsg);
         }
     })
 }
