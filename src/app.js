@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
     // (view to render, object that I want my view to access)
     res.render('index', {
         title: 'Weather',
-        description: 'Use this site to search for a forecast',
+        description: 'This site is created by Junhan. Use this site to search for a weather forecast in a certain geolocation.',
         name: 'Junhan'
     });
 });
